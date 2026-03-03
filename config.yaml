@@ -1,0 +1,47 @@
+monitor_region:
+  x: 1065
+  y: 163
+  w: 249
+  h: 169
+click_point:
+  x: 1310
+  y: 350
+capture:
+  high_dpi: true
+  capture_scale: 1.0
+template:
+  path: target.png
+  method: TM_CCOEFF_NORMED
+  threshold: 0.84
+  multiscale:
+    enabled: false
+    scales:
+    - 0.85
+    - 0.9
+    - 0.95
+    - 1.0
+    - 1.05
+    - 1.1
+    - 1.15
+loop:
+  poll_interval_sec: 0.2
+  click_interval_sec: 3.0
+  no_change_threshold: 0.8
+  wait_change_timeout_sec: 6.0
+  change_threshold: 6.0
+evidence:
+  dir: evidence
+  save_on_hit: true
+email:
+  enabled: false
+  flush_interval_sec: 30
+  max_items_per_email: 10
+  subject_prefix: '[screen-monitor]'
+  to_email: peng_lv_lp@163.com
+  from_email: peng_lv_lp@163.com
+  app_password: happykoy12
+  smtp_server: smtp.163.com
+  smtp_port: 465
+  smtp_ssl: true
+  smtp_starttls: false
+  smtp_timeout_sec: 30
