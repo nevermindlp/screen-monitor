@@ -39,7 +39,7 @@ email:
   subject_prefix: '[screen-monitor]'
   to_email: peng_lv_lp@163.com
   from_email: peng_lv_lp@163.com
-  app_password: happykoy12
+  app_password: xxxxxx
   smtp_server: smtp.163.com
   smtp_port: 465
   smtp_ssl: true
